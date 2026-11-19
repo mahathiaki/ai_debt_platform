@@ -1,0 +1,96 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    min-height: 85vh;
+    background: linear-gradient(135deg, #f8fbff, #e8f3ff);
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    color: #0f172a;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.primary-btn {
+    background: #38bdf8;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    background: #0284c7;
+}
+
+.secondary-btn {
+    background: white;
+    color: #0f172a;
+    border: 2px solid #38bdf8;
+    padding: 15px 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.secondary-btn:hover {
+    background: #38bdf8;
+    color: white;
+}
+
+.hero-image {
+    width: 45%;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+}
